@@ -8,87 +8,42 @@ Our player provides convenient APIs for DRM, media controllers, and a generic UI
 
 - **IDE**: Android Studio 3.0 or later
 - **minSdkVersion**: 21
-- **targetSdkVersion**: 33
+- **targetSdkVersion**: 34
 - **Kotlin Version**: 1.9.x or later
+- **Android Gradle Plugin**: 8.2.0 or lower
 
-## Importing AAR into Project
+## Integration
 
-There are multiple ways to integrate an AAR file into your Android project. Below are the methods,
-including a simplified approach using `implementation fileTree`.  
-To ensure you have the most recent features and updates, download the latest version of the AAR files from the BlendVision Android Player SDK repository.  
-Access the latest releases at: [BlendVision Android Player SDK Releases](https://github.com/BlendVision/Android-Player-SDK/releases).  
-Upon visiting the link, you will find the following AAR files available for download:
-
-#### BlendVision Player Core SDK
-- `bv-playback.aar`
-- `bv-download.aar`
-- `bv-analytics.aar`
-- `bv-common.aar`
-
-#### BVPlayer
-- `bv-adapter.aar`
-- `bv-library-core-release.aar`
-- `bv-library-common-release.aar`
-- `bv-library-extractor-release.aar`
-- `bv-library-dash-release.aar`
-- `bv-library-ui-release.aar`
-
-### Manual Import with `fileTree`
-
-1. **Place AAR File in `libs` Directory**: Ensure the `.aar` (and/or `.jar`) file is located within
-   the `libs` directory of your Android project.
-
-2. **Update `build.gradle`**: In your app-level `build.gradle` file, add the following line in
-   the `dependencies` block:
-
-    ```groovy
-    implementation fileTree(dir: 'libs', include: ['*.jar', '*.aar'])
-    ```
-
-   This will include all `.jar` and `.aar` files that are in the `libs` directory into your project.
-
-
-## Add the dependencies to your app-level Gradle file
+### In your settings.gradle file, `dependencyResolutionManagement` sections:
+[Gets username and password](https://github.com/BlendVision/Android-Player-SDK/wiki/Android%E2%80%90Player%E2%80%90SDK-pull-credentials)
 ```groovy
-
-    //coroutines
-    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3"
-
-    //Chromecast
-    implementation "com.google.android.gms:play-services-cast-framework:21.1.0"
-
-    //Glide
-    implementation "com.github.bumptech.glide:glide:4.15.1"
-
-    //gson
-    implementation "com.google.code.gson:gson:2.10.1"
-
-    //retrofit2
-    implementation "com.squareup.retrofit2:retrofit:2.9.0"
-    implementation "com.squareup.retrofit2:converter-gson:2.9.0"
-
-    //okhttp_logging_interceptor
-    implementation "com.squareup.okhttp3:logging-interceptor:4.9.0"
-
-    //koin
-    implementation "io.insert-koin:koin-android:3.4.3"
-
-    //kotlinx serialization
-    implementation "org.jetbrains.kotlinx:kotlinx-serialization-json:1.5.1"
-
-    //proto datastore
-    implementation "androidx.datastore:datastore:1.0.0"
-
-    implementation ("com.google.guava:guava:27.1-android") {
-       // Exclude dependencies that are only used by Guava at compile time
-       // (but declared as runtime deps) [internal b/168188131].
-       exclude group: 'com.google.code.findbugs', module: 'jsr305'
-       exclude group: 'org.checkerframework', module: 'checker-compat-qual'
-       exclude group: 'com.google.errorprone', module: 'error_prone_annotations'
-       exclude group: 'com.google.j2objc', module: 'j2objc-annotations'
-       exclude group: 'org.codehaus.mojo', module: 'animal-sniffer-annotations'
+dependencyResolutionManagement {
+  repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+  repositories {
+    google()
+    mavenCentral()
+    //add below
+    maven {
+      url = uri("https://maven.pkg.github.com/blendvision/Android-Player-SDK")
+      credentials {
+        username = //TODO
+        password = //TODO
+      }
     }
 
+  }
+}
+```
+
+### Add the dependencies for the Messaging SDK to your module's app-level Gradle file, normally app/build.gradle:
+
+```groovy
+dependencies {
+    implementation 'com.blendvision.player.bv-playback:5.0.0'
+    implementation 'com.blendvision.player.bv-download:5.0.0'
+    implementation 'com.blendvision.player.bv-analytics:5.0.0'
+    implementation 'com.blendvision.player.bv-common:5.0.0'
+}
 ```
 
 > **Note**: After making changes, don't forget to sync your Gradle files to ensure that the project
