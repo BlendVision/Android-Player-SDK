@@ -39,10 +39,10 @@ dependencyResolutionManagement {
 
 ```groovy
 dependencies {
-    implementation 'com.blendvision.player.bv-playback:5.0.0'
-    implementation 'com.blendvision.player.bv-download:5.0.0'
-    implementation 'com.blendvision.player.bv-analytics:5.0.0'
-    implementation 'com.blendvision.player.bv-common:5.0.0'
+    implementation 'com.blendvision.player:playback:5.0.0'
+    implementation 'com.blendvision.player:download:5.0.0'
+    implementation 'com.blendvision.player:analytics:5.0.0'
+    implementation 'com.blendvision.player:common:5.0.0'
 }
 ```
 
