@@ -9,7 +9,7 @@ Upgrading from version 4.5.x to 5.0.0 introduces several breaking changes. This 
 ## 1. Maven Implementation from GitHub
 
 ### Previous version (4.5.x)
-In version 4.5.x, you might import the player SDK as below which under project libs folder. In addition, implemetation other library because player needed.  
+In version 4.5.x, you might import the player SDK as below which under project libs folder. In addition, implemetation other library because of player needed.  
 
 Example:
 ```groovy
@@ -40,7 +40,7 @@ implementation Libs.koin
 ```
 
 ### New version (5.0.0)
-Start from version 5.0.0, the dependency management has been streamlined, and the project artifacts are now hosted on Maven Central or another public repository.
+Start from version 5.0.0, the dependency management has been streamlined, and the project artifacts are now hosted on Github package repository.
 
 Example:
 ```groovy
@@ -109,9 +109,9 @@ import com.blendvision.player.playback.presentation.logger.PlayLogger
 ```
 
 #### Steps to Migrate:
-1. Add missing classes by Android Studio's helping
+1. Add missing classes with Android Studio's helping
     - hotkey: option + enter
-2. Remove previous import by Android Studio
+2. Remove previous imported classes with Android Studio
     - hotkey: option + command + o
 
 ## Summary
