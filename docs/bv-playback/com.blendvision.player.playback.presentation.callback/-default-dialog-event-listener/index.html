@@ -1,0 +1,198 @@
+<!doctype html>
+<html class="no-js">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>DefaultDialogEventListener</title>
+<link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">    <script>var pathToRoot = "../../../";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async></script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../../styles/font-jb-sans-auto.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer></script></head>
+<body>
+    <div class="root">
+<nav class="navigation" id="navigation-wrapper">
+    <div class="navigation--inner">
+        <div class="navigation-title">
+            <button class="menu-toggle" id="menu-toggle" type="button">toggle menu</button>
+            <div class="library-name">
+<a class="library-name--link" href="../../../index.html">
+                            BlendVision Android Player SDK
+                    </a>            </div>
+            <div class="library-version">
+            </div>
+        </div>
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":bv-playback:dokkaHtmlPartial/release">androidJvm</button>
+        </div>
+    </div>
+    <div class="navigation-controls">
+        <button class="navigation-controls--btn navigation-controls--theme" id="theme-toggle-button" type="button">switch theme</button>
+        <div class="navigation-controls--btn navigation-controls--search" id="searchBar" role="button">search in API</div>
+    </div>
+</nav>
+        <div id="container">
+            <div class="sidebar" id="leftColumn">
+                <div class="sidebar--inner" id="sideMenu"></div>
+            </div>
+            <div id="main">
+<div class="main-content" data-page-type="classlike" id="content" pageids="bv-playback::com.blendvision.player.playback.presentation.callback/DefaultDialogEventListener///PointingToDeclaration//413135857">
+  <div class="breadcrumbs"><a href="../../index.html">bv-playback</a><span class="delimiter">/</span><a href="../index.html">com.blendvision.player.playback.presentation.callback</a><span class="delimiter">/</span><span class="current">DefaultDialogEventListener</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Default</span><wbr><span>Dialog</span><wbr><span>Event</span><wbr><span><span>Listener</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":bv-playback:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">class </span><a href="index.html">DefaultDialogEventListener</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">activity<span class="token operator">: </span><span data-unresolved-link="androidx.fragment.app/FragmentActivity///PointingToDeclaration/">FragmentActivity</span><span class="token punctuation">, </span></span><span class="parameter ">uniView<span class="token operator">: </span><a href="../../com.blendvision.player.playback.presentation/-uni-view/index.html">UniView</a></span></span><span class="token punctuation">)</span> : <span data-unresolved-link="com.blendvision.player.playback.domain.delegate/DialogEventListener///PointingToDeclaration/">DialogEventListener</span></div><p class="paragraph">This class is the default implementation of DialogEventListener. Use this class to show the default dialog via <a href="../../com.blendvision.player.playback.presentation/-uni-view/set-dialog-event-listener.html">UniView.setDialogEventListener</a> and can override the functions to show customized dialog.</p></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="CONSTRUCTOR">
+        <h2 class="">Constructors</h2>
+        <div class="table"><a data-name="-1087471057%2FConstructors%2F413135857" anchor-label="DefaultDialogEventListener" id="-1087471057%2FConstructors%2F413135857" data-filterable-set=":bv-playback:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-togglable="CONSTRUCTOR" data-filterable-current=":bv-playback:dokkaHtmlPartial/release" data-filterable-set=":bv-playback:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-default-dialog-event-listener.html"><span>Default</span><wbr><span>Dialog</span><wbr><span>Event</span><wbr><span><span>Listener</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1087471057%2FConstructors%2F413135857"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":bv-playback:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">activity<span class="token operator">: </span><span data-unresolved-link="androidx.fragment.app/FragmentActivity///PointingToDeclaration/">FragmentActivity</span><span class="token punctuation">, </span></span><span class="parameter ">uniView<span class="token operator">: </span><a href="../../com.blendvision.player.playback.presentation/-uni-view/index.html">UniView</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="TYPE">
+        <h2 class="">Types</h2>
+        <div class="table"><a data-name="7705712%2FClasslikes%2F413135857" anchor-label="Companion" id="7705712%2FClasslikes%2F413135857" data-filterable-set=":bv-playback:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":bv-playback:dokkaHtmlPartial/release" data-filterable-set=":bv-playback:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-companion/index.html"><span><span>Companion</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="7705712%2FClasslikes%2F413135857"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":bv-playback:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">object </span><a href="-companion/index.html">Companion</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="FUNCTION">
+        <h2 class="">Functions</h2>
+        <div class="table"><a data-name="-2136492859%2FFunctions%2F413135857" anchor-label="onShowDialog" id="-2136492859%2FFunctions%2F413135857" data-filterable-set=":bv-playback:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":bv-playback:dokkaHtmlPartial/release" data-filterable-set=":bv-playback:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="on-show-dialog.html"><span>on</span><wbr><span>Show</span><wbr><span><span>Dialog</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2136492859%2FFunctions%2F413135857"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":bv-playback:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="on-show-dialog.html"><span class="token function">onShowDialog</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">event<span class="token operator">: </span><span data-unresolved-link="com.blendvision.player.playback.domain.model/PaaSDialogEvent///PointingToDeclaration/">PaaSDialogEvent</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Handle the <span data-unresolved-link="com.blendvision.player.playback.domain.model/PaaSDialogEvent///PointingToDeclaration/">PaaSDialogEvent</span> to show the default dialog.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1766511348%2FFunctions%2F413135857" anchor-label="showCommonDialog" id="1766511348%2FFunctions%2F413135857" data-filterable-set=":bv-playback:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":bv-playback:dokkaHtmlPartial/release" data-filterable-set=":bv-playback:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="show-common-dialog.html"><span>show</span><wbr><span>Common</span><wbr><span><span>Dialog</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1766511348%2FFunctions%2F413135857"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":bv-playback:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="show-common-dialog.html"><span class="token function">showCommonDialog</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">data<span class="token operator">: </span><span data-unresolved-link="com.blendvision.player.playback.presentation.dialog/DialogEventWrapper///PointingToDeclaration/">DialogEventWrapper</span><span class="token punctuation">, </span></span><span class="parameter ">activity<span class="token operator">: </span><span data-unresolved-link="androidx.fragment.app/FragmentActivity///PointingToDeclaration/">FragmentActivity</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">To show the default dialog for handling the com.kkstream.android.paas.player.common.event.PaasEvent</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-705233708%2FFunctions%2F413135857" anchor-label="showErrorDialog" id="-705233708%2FFunctions%2F413135857" data-filterable-set=":bv-playback:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":bv-playback:dokkaHtmlPartial/release" data-filterable-set=":bv-playback:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="show-error-dialog.html"><span>show</span><wbr><span>Error</span><wbr><span><span>Dialog</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-705233708%2FFunctions%2F413135857"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":bv-playback:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="show-error-dialog.html"><span class="token function">showErrorDialog</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">data<span class="token operator">: </span><a href="../../com.blendvision.player.playback.presentation.error/-uni-error-event/index.html">UniErrorEvent</a><span class="token punctuation">, </span></span><span class="parameter ">activity<span class="token operator">: </span><span data-unresolved-link="androidx.fragment.app/FragmentActivity///PointingToDeclaration/">FragmentActivity</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">To show the default error dialog.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1677413206%2FFunctions%2F413135857" anchor-label="showSelectedQualityErrorDialog" id="-1677413206%2FFunctions%2F413135857" data-filterable-set=":bv-playback:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":bv-playback:dokkaHtmlPartial/release" data-filterable-set=":bv-playback:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="show-selected-quality-error-dialog.html"><span>show</span><wbr><span>Selected</span><wbr><span>Quality</span><wbr><span>Error</span><wbr><span><span>Dialog</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1677413206%2FFunctions%2F413135857"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":bv-playback:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="show-selected-quality-error-dialog.html"><span class="token function">showSelectedQualityErrorDialog</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">activity<span class="token operator">: </span><span data-unresolved-link="androidx.fragment.app/FragmentActivity///PointingToDeclaration/">FragmentActivity</span><span class="token punctuation">, </span></span><span class="parameter ">uniView<span class="token operator">: </span><a href="../../com.blendvision.player.playback.presentation/-uni-view/index.html">UniView</a><span class="token punctuation">, </span></span><span class="parameter ">errorMsgId<span class="token operator">: </span><span data-unresolved-link="kotlin/Int///PointingToDeclaration/">Int</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">To show the default dialog when the selected quality not match with profile</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1978468073%2FFunctions%2F413135857" anchor-label="showSettingDialog" id="-1978468073%2FFunctions%2F413135857" data-filterable-set=":bv-playback:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":bv-playback:dokkaHtmlPartial/release" data-filterable-set=":bv-playback:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="show-setting-dialog.html"><span>show</span><wbr><span>Setting</span><wbr><span><span>Dialog</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1978468073%2FFunctions%2F413135857"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":bv-playback:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="show-setting-dialog.html"><span class="token function">showSettingDialog</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">data<span class="token operator">: </span><span data-unresolved-link="com.blendvision.player.playback.domain.model/SettingDialogData///PointingToDeclaration/">SettingDialogData</span><span class="token punctuation">, </span></span><span class="parameter ">uniView<span class="token operator">: </span><a href="../../com.blendvision.player.playback.presentation/-uni-view/index.html">UniView</a><span class="token punctuation">, </span></span><span class="parameter ">activity<span class="token operator">: </span><span data-unresolved-link="androidx.fragment.app/FragmentActivity///PointingToDeclaration/">FragmentActivity</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">To show the default setting dialog.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2024 Copyright</span><span class="pull-right"><span>Generated by </span><a href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
