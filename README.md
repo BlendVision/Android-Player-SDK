@@ -35,7 +35,7 @@ dependencyResolutionManagement {
 }
 ```
 
-### Add the dependencies for the Messaging SDK to your module's app-level Gradle file, normally app/build.gradle:
+### Add the dependencies for the Player SDK to your module's app-level Gradle file, normally app/build.gradle:
 
 ```groovy
 dependencies {
