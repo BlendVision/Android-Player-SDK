@@ -1,12 +1,14 @@
 $dokka.format:html-v1
 $dokka.linkExtension:html
 
+module:bv-common
+com.blendvision.player.common.presentation.entity.log
 module:bv-download
-com.blendvision.player.download
-com.blendvision.player.download.ui.delegate
-com.blendvision.player.download.ui.entity
-com.blendvision.player.download.ui.error
-com.blendvision.player.download.ui.service
+com.blendvision.player.download.presentation
+com.blendvision.player.download.presentation.delegate
+com.blendvision.player.download.presentation.entity
+com.blendvision.player.download.presentation.error
+com.blendvision.player.download.presentation.service
 module:bv-playback
 com.blendvision.player.playback.cast.presentation
 com.blendvision.player.playback.cast.presentation.callback
