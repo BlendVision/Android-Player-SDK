@@ -2,6 +2,8 @@ $dokka.format:html-v1
 $dokka.linkExtension:html
 
 module:bv-common
+com.blendvision.player.common.presentation.entity.analytics
+com.blendvision.player.common.presentation.entity.drm
 com.blendvision.player.common.presentation.entity.log
 module:bv-download
 com.blendvision.player.download.presentation
