@@ -24,7 +24,7 @@ dependencyResolutionManagement {
     mavenCentral()
     //add below
     maven {
-      url = uri("https://maven.pkg.github.com/blendvision/Android-Player-SDK")
+      url = uri("https://maven.pkg.github.com/blendvision/Android-Packages")
       credentials {
         username = //TODO
         password = //TODO
@@ -79,4 +79,7 @@ BlendVision Player license key is obtained by logging into BlendVision CMS (http
 > **Note**:
 >   1. The order player adopts is first check PlayerConfig and then check meta-data.
 >   2. If the license key is not correctly set, you will encounter a 20403 error.
+
+> For a full code example, please refer to the [Sample app demo](https://github.com/BlendVision/Android-Player-Samples)
+
 
