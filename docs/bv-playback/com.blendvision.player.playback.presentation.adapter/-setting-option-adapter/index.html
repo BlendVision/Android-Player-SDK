@@ -1,0 +1,183 @@
+<!doctype html>
+<html class="no-js">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>SettingOptionAdapter</title>
+<link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">    <script>var pathToRoot = "../../../";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async></script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../../styles/font-jb-sans-auto.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer></script></head>
+<body>
+    <div class="root">
+<nav class="navigation" id="navigation-wrapper">
+    <div class="navigation--inner">
+        <div class="navigation-title">
+            <button class="menu-toggle" id="menu-toggle" type="button">toggle menu</button>
+            <div class="library-name">
+<a class="library-name--link" href="../../../index.html">
+                            BlendVision Android Player SDK
+                    </a>            </div>
+            <div class="library-version">
+            </div>
+        </div>
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":bv-playback:dokkaHtmlPartial/stageRelease">androidJvm</button>
+        </div>
+    </div>
+    <div class="navigation-controls">
+        <button class="navigation-controls--btn navigation-controls--theme" id="theme-toggle-button" type="button">switch theme</button>
+        <div class="navigation-controls--btn navigation-controls--search" id="searchBar" role="button">search in API</div>
+    </div>
+</nav>
+        <div id="container">
+            <div class="sidebar" id="leftColumn">
+                <div class="sidebar--inner" id="sideMenu"></div>
+            </div>
+            <div id="main">
+<div class="main-content" data-page-type="classlike" id="content" pageids="bv-playback::com.blendvision.player.playback.presentation.adapter/SettingOptionAdapter///PointingToDeclaration//-542442701">
+  <div class="breadcrumbs"><a href="../../index.html">bv-playback</a><span class="delimiter">/</span><a href="../index.html">com.blendvision.player.playback.presentation.adapter</a><span class="delimiter">/</span><span class="current">SettingOptionAdapter</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Setting</span><wbr><span>Option</span><wbr><span><span>Adapter</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":bv-playback:dokkaHtmlPartial/stageRelease"><div class="symbol monospace"><span class="token keyword">class </span><a href="index.html">SettingOptionAdapter</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">onClick<span class="token operator">: </span><span class="token punctuation">(</span><span class="token keyword"></span><a href="../../com.blendvision.player.playback.presentation.model.setting/-setting-option/index.html">SettingOption</a><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><span data-unresolved-link="kotlin/Unit///PointingToDeclaration/">Unit</span></span></span><span class="token punctuation">)</span> : <span data-unresolved-link="androidx.recyclerview.widget/RecyclerView.Adapter///PointingToDeclaration/">RecyclerView.Adapter</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="-setting-option-view-holder/index.html">SettingOptionAdapter.SettingOptionViewHolder</a><span class="token operator">&gt; </span></div></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="CONSTRUCTOR">
+        <h2 class="">Constructors</h2>
+        <div class="table"><a data-name="1823493735%2FConstructors%2F-542442701" anchor-label="SettingOptionAdapter" id="1823493735%2FConstructors%2F-542442701" data-filterable-set=":bv-playback:dokkaHtmlPartial/stageRelease"></a>
+          <div class="table-row" data-togglable="CONSTRUCTOR" data-filterable-current=":bv-playback:dokkaHtmlPartial/stageRelease" data-filterable-set=":bv-playback:dokkaHtmlPartial/stageRelease">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-setting-option-adapter.html"><span>Setting</span><wbr><span>Option</span><wbr><span><span>Adapter</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1823493735%2FConstructors%2F-542442701"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":bv-playback:dokkaHtmlPartial/stageRelease"><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">onClick<span class="token operator">: </span><span class="token punctuation">(</span><span class="token keyword"></span><a href="../../com.blendvision.player.playback.presentation.model.setting/-setting-option/index.html">SettingOption</a><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><span data-unresolved-link="kotlin/Unit///PointingToDeclaration/">Unit</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="TYPE">
+        <h2 class="">Types</h2>
+        <div class="table"><a data-name="383944563%2FClasslikes%2F-542442701" anchor-label="SettingOptionViewHolder" id="383944563%2FClasslikes%2F-542442701" data-filterable-set=":bv-playback:dokkaHtmlPartial/stageRelease"></a>
+          <div class="table-row" data-filterable-current=":bv-playback:dokkaHtmlPartial/stageRelease" data-filterable-set=":bv-playback:dokkaHtmlPartial/stageRelease">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-setting-option-view-holder/index.html"><span>Setting</span><wbr><span>Option</span><wbr><span>View</span><wbr><span><span>Holder</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="383944563%2FClasslikes%2F-542442701"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":bv-playback:dokkaHtmlPartial/stageRelease"><div class="symbol monospace"><span class="token keyword">inner </span><span class="token keyword">class </span><a href="-setting-option-view-holder/index.html">SettingOptionViewHolder</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">binding<span class="token operator">: </span><span data-unresolved-link="/<Error class: unknown class>///PointingToDeclaration/">&lt;Error class: unknown class&gt;</span></span></span><span class="token punctuation">)</span> : <span data-unresolved-link="androidx.recyclerview.widget/RecyclerView.ViewHolder///PointingToDeclaration/">RecyclerView.ViewHolder</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="FUNCTION">
+        <h2 class="">Functions</h2>
+        <div class="table"><a data-name="656872766%2FFunctions%2F-542442701" anchor-label="getItemCount" id="656872766%2FFunctions%2F-542442701" data-filterable-set=":bv-playback:dokkaHtmlPartial/stageRelease"></a>
+          <div class="table-row" data-filterable-current=":bv-playback:dokkaHtmlPartial/stageRelease" data-filterable-set=":bv-playback:dokkaHtmlPartial/stageRelease">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-item-count.html"><span>get</span><wbr><span>Item</span><wbr><span><span>Count</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="656872766%2FFunctions%2F-542442701"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":bv-playback:dokkaHtmlPartial/stageRelease"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="get-item-count.html"><span class="token function">getItemCount</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="kotlin/Int///PointingToDeclaration/">Int</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-414747537%2FFunctions%2F-542442701" anchor-label="onBindViewHolder" id="-414747537%2FFunctions%2F-542442701" data-filterable-set=":bv-playback:dokkaHtmlPartial/stageRelease"></a>
+          <div class="table-row" data-filterable-current=":bv-playback:dokkaHtmlPartial/stageRelease" data-filterable-set=":bv-playback:dokkaHtmlPartial/stageRelease">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="on-bind-view-holder.html"><span>on</span><wbr><span>Bind</span><wbr><span>View</span><wbr><span><span>Holder</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-414747537%2FFunctions%2F-542442701"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":bv-playback:dokkaHtmlPartial/stageRelease"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="on-bind-view-holder.html"><span class="token function">onBindViewHolder</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">holder<span class="token operator">: </span><a href="-setting-option-view-holder/index.html">SettingOptionAdapter.SettingOptionViewHolder</a><span class="token punctuation">, </span></span><span class="parameter ">position<span class="token operator">: </span><span data-unresolved-link="kotlin/Int///PointingToDeclaration/">Int</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1512529227%2FFunctions%2F-542442701" anchor-label="onCreateViewHolder" id="-1512529227%2FFunctions%2F-542442701" data-filterable-set=":bv-playback:dokkaHtmlPartial/stageRelease"></a>
+          <div class="table-row" data-filterable-current=":bv-playback:dokkaHtmlPartial/stageRelease" data-filterable-set=":bv-playback:dokkaHtmlPartial/stageRelease">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="on-create-view-holder.html"><span>on</span><wbr><span>Create</span><wbr><span>View</span><wbr><span><span>Holder</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1512529227%2FFunctions%2F-542442701"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":bv-playback:dokkaHtmlPartial/stageRelease"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="on-create-view-holder.html"><span class="token function">onCreateViewHolder</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">parent<span class="token operator">: </span><span data-unresolved-link="android.view/ViewGroup///PointingToDeclaration/">ViewGroup</span><span class="token punctuation">, </span></span><span class="parameter ">viewType<span class="token operator">: </span><span data-unresolved-link="kotlin/Int///PointingToDeclaration/">Int</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="-setting-option-view-holder/index.html">SettingOptionAdapter.SettingOptionViewHolder</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-12777452%2FFunctions%2F-542442701" anchor-label="submitOptions" id="-12777452%2FFunctions%2F-542442701" data-filterable-set=":bv-playback:dokkaHtmlPartial/stageRelease"></a>
+          <div class="table-row" data-filterable-current=":bv-playback:dokkaHtmlPartial/stageRelease" data-filterable-set=":bv-playback:dokkaHtmlPartial/stageRelease">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="submit-options.html"><span>submit</span><wbr><span><span>Options</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-12777452%2FFunctions%2F-542442701"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":bv-playback:dokkaHtmlPartial/stageRelease"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="submit-options.html"><span class="token function">submitOptions</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">settingGroup<span class="token operator">: </span><a href="../../com.blendvision.player.playback.presentation.model.setting/-setting-group/index.html">SettingGroup</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2026 Copyright</span><span class="pull-right"><span>Generated by </span><a href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
