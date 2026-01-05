@@ -8,8 +8,8 @@ Our player provides convenient APIs for DRM, media controllers, and a generic UI
 
 - **IDE**: Android Studio 3.0 or later
 - **minSdkVersion**: 21
-- **targetSdkVersion**: 34
-- **Kotlin Version**: 1.9.x or later
+- **targetSdkVersion**: 35
+- **Kotlin Version**: 2.1.20 or later
 - **Android Gradle Plugin**: 8.3.2 or lower
 
 ## Integration
