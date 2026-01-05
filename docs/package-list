@@ -15,9 +15,12 @@ com.blendvision.player.playback.cast.presentation
 com.blendvision.player.playback.cast.presentation.callback
 com.blendvision.player.playback.cast.presentation.model
 com.blendvision.player.playback.presentation
+com.blendvision.player.playback.presentation.adapter
 com.blendvision.player.playback.presentation.callback
 com.blendvision.player.playback.presentation.delegate
 com.blendvision.player.playback.presentation.error
 com.blendvision.player.playback.presentation.logger
 com.blendvision.player.playback.presentation.menu
 com.blendvision.player.playback.presentation.model
+com.blendvision.player.playback.presentation.model.setting
+com.blendvision.player.playback.presentation.utils

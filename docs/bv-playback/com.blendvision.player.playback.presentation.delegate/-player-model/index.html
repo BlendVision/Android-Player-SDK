@@ -1,0 +1,764 @@
+<!doctype html>
+<html class="no-js">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>PlayerModel</title>
+<link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">    <script>var pathToRoot = "../../../";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async></script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../../styles/font-jb-sans-auto.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer></script></head>
+<body>
+    <div class="root">
+<nav class="navigation" id="navigation-wrapper">
+    <div class="navigation--inner">
+        <div class="navigation-title">
+            <button class="menu-toggle" id="menu-toggle" type="button">toggle menu</button>
+            <div class="library-name">
+<a class="library-name--link" href="../../../index.html">
+                            BlendVision Android Player SDK
+                    </a>            </div>
+            <div class="library-version">
+            </div>
+        </div>
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":bv-playback:dokkaHtmlPartial/stageRelease">androidJvm</button>
+        </div>
+    </div>
+    <div class="navigation-controls">
+        <button class="navigation-controls--btn navigation-controls--theme" id="theme-toggle-button" type="button">switch theme</button>
+        <div class="navigation-controls--btn navigation-controls--search" id="searchBar" role="button">search in API</div>
+    </div>
+</nav>
+        <div id="container">
+            <div class="sidebar" id="leftColumn">
+                <div class="sidebar--inner" id="sideMenu"></div>
+            </div>
+            <div id="main">
+<div class="main-content" data-page-type="classlike" id="content" pageids="bv-playback::com.blendvision.player.playback.presentation.delegate/PlayerModel///PointingToDeclaration//-542442701">
+  <div class="breadcrumbs"><a href="../../index.html">bv-playback</a><span class="delimiter">/</span><a href="../index.html">com.blendvision.player.playback.presentation.delegate</a><span class="delimiter">/</span><span class="current">PlayerModel</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Player</span><wbr><span><span>Model</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":bv-playback:dokkaHtmlPartial/stageRelease"><div class="symbol monospace"><span class="token keyword">interface </span><a href="index.html">PlayerModel</a></div></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="PROPERTY">
+        <h2 class="">Properties</h2>
+        <div class="table"><a data-name="-1364238493%2FProperties%2F-542442701" anchor-label="audioTrack" id="-1364238493%2FProperties%2F-542442701" data-filterable-set=":bv-playback:dokkaHtmlPartial/stageRelease"></a>
+          <div class="table-row" data-filterable-current=":bv-playback:dokkaHtmlPartial/stageRelease" data-filterable-set=":bv-playback:dokkaHtmlPartial/stageRelease">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="audio-track.html"><span>audio</span><wbr><span><span>Track</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1364238493%2FProperties%2F-542442701"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":bv-playback:dokkaHtmlPartial/stageRelease"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">var </span><a href="audio-track.html">audioTrack</a><span class="token operator">: </span><span data-unresolved-link="kotlin/String///PointingToDeclaration/">String</span><span class="token operator">?</span></div><div class="brief "><p class="paragraph">The preferred audio language</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-487825813%2FProperties%2F-542442701" anchor-label="autoRepeatEnabled" id="-487825813%2FProperties%2F-542442701" data-filterable-set=":bv-playback:dokkaHtmlPartial/stageRelease"></a>
+          <div class="table-row" data-filterable-current=":bv-playback:dokkaHtmlPartial/stageRelease" data-filterable-set=":bv-playback:dokkaHtmlPartial/stageRelease">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="auto-repeat-enabled.html"><span>auto</span><wbr><span>Repeat</span><wbr><span><span>Enabled</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-487825813%2FProperties%2F-542442701"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":bv-playback:dokkaHtmlPartial/stageRelease"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">var </span><a href="auto-repeat-enabled.html">autoRepeatEnabled</a><span class="token operator">: </span><span data-unresolved-link="kotlin/Boolean///PointingToDeclaration/">Boolean</span></div><div class="brief "><p class="paragraph">The current repeat mode enabled</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1424235055%2FProperties%2F-542442701" anchor-label="currentVolume" id="1424235055%2FProperties%2F-542442701" data-filterable-set=":bv-playback:dokkaHtmlPartial/stageRelease"></a>
+          <div class="table-row" data-filterable-current=":bv-playback:dokkaHtmlPartial/stageRelease" data-filterable-set=":bv-playback:dokkaHtmlPartial/stageRelease">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="current-volume.html"><span>current</span><wbr><span><span>Volume</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1424235055%2FProperties%2F-542442701"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":bv-playback:dokkaHtmlPartial/stageRelease"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">var </span><a href="current-volume.html">currentVolume</a><span class="token operator">: </span><span data-unresolved-link="kotlin/Float///PointingToDeclaration/">Float</span></div><div class="brief "><p class="paragraph">The current volume</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-161156266%2FProperties%2F-542442701" anchor-label="playbackSpeed" id="-161156266%2FProperties%2F-542442701" data-filterable-set=":bv-playback:dokkaHtmlPartial/stageRelease"></a>
+          <div class="table-row" data-filterable-current=":bv-playback:dokkaHtmlPartial/stageRelease" data-filterable-set=":bv-playback:dokkaHtmlPartial/stageRelease">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="playback-speed.html"><span>playback</span><wbr><span><span>Speed</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-161156266%2FProperties%2F-542442701"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":bv-playback:dokkaHtmlPartial/stageRelease"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">var </span><a href="playback-speed.html">playbackSpeed</a><span class="token operator">: </span><span data-unresolved-link="kotlin/Float///PointingToDeclaration/">Float</span></div><div class="brief "><p class="paragraph">The factor by which playback will be sped up. Must be greater than zero. The default value is 1.0.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2032904365%2FProperties%2F-542442701" anchor-label="playWhenReady" id="2032904365%2FProperties%2F-542442701" data-filterable-set=":bv-playback:dokkaHtmlPartial/stageRelease"></a>
+          <div class="table-row" data-filterable-current=":bv-playback:dokkaHtmlPartial/stageRelease" data-filterable-set=":bv-playback:dokkaHtmlPartial/stageRelease">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="play-when-ready.html"><span>play</span><wbr><span>When</span><wbr><span><span>Ready</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2032904365%2FProperties%2F-542442701"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":bv-playback:dokkaHtmlPartial/stageRelease"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">val </span><a href="play-when-ready.html">playWhenReady</a><span class="token operator">: </span><span data-unresolved-link="kotlin/Boolean///PointingToDeclaration/">Boolean</span></div><div class="brief "><p class="paragraph">Get player will play video or not when the resource is ready. Player will play the content if result is true, otherwise, render the first frame</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1229124593%2FProperties%2F-542442701" anchor-label="subtitleTrack" id="-1229124593%2FProperties%2F-542442701" data-filterable-set=":bv-playback:dokkaHtmlPartial/stageRelease"></a>
+          <div class="table-row" data-filterable-current=":bv-playback:dokkaHtmlPartial/stageRelease" data-filterable-set=":bv-playback:dokkaHtmlPartial/stageRelease">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="subtitle-track.html"><span>subtitle</span><wbr><span><span>Track</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1229124593%2FProperties%2F-542442701"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":bv-playback:dokkaHtmlPartial/stageRelease"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">var </span><a href="subtitle-track.html">subtitleTrack</a><span class="token operator">: </span><a href="../../com.blendvision.player.playback.presentation.model/-track-info/-subtitle/index.html">TrackInfo.Subtitle</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">The preferred subtitle language</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="FUNCTION">
+        <h2 class="">Functions</h2>
+        <div class="table"><a data-name="-104613126%2FFunctions%2F-542442701" anchor-label="addMetadataOutput" id="-104613126%2FFunctions%2F-542442701" data-filterable-set=":bv-playback:dokkaHtmlPartial/stageRelease"></a>
+          <div class="table-row" data-filterable-current=":bv-playback:dokkaHtmlPartial/stageRelease" data-filterable-set=":bv-playback:dokkaHtmlPartial/stageRelease">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="add-metadata-output.html"><span>add</span><wbr><span>Metadata</span><wbr><span><span>Output</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-104613126%2FFunctions%2F-542442701"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":bv-playback:dokkaHtmlPartial/stageRelease"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="add-metadata-output.html"><span class="token function">addMetadataOutput</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">metadataOutput<span class="token operator">: </span><span data-unresolved-link="com.google.android.exoplayer.metadata/MetadataOutput///PointingToDeclaration/">MetadataOutput</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1479757249%2FFunctions%2F-542442701" anchor-label="cancelPreCache" id="-1479757249%2FFunctions%2F-542442701" data-filterable-set=":bv-playback:dokkaHtmlPartial/stageRelease"></a>
+          <div class="table-row" data-filterable-current=":bv-playback:dokkaHtmlPartial/stageRelease" data-filterable-set=":bv-playback:dokkaHtmlPartial/stageRelease">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="cancel-pre-cache.html"><span>cancel</span><wbr><span>Pre</span><wbr><span><span>Cache</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1479757249%2FFunctions%2F-542442701"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":bv-playback:dokkaHtmlPartial/stageRelease"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="cancel-pre-cache.html"><span class="token function">cancelPreCache</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Cancel pre-cache</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1801393104%2FFunctions%2F-542442701" anchor-label="cancelPreCacheAndPlay" id="1801393104%2FFunctions%2F-542442701" data-filterable-set=":bv-playback:dokkaHtmlPartial/stageRelease"></a>
+          <div class="table-row" data-filterable-current=":bv-playback:dokkaHtmlPartial/stageRelease" data-filterable-set=":bv-playback:dokkaHtmlPartial/stageRelease">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="cancel-pre-cache-and-play.html"><span>cancel</span><wbr><span>Pre</span><wbr><span>Cache</span><wbr><span>And</span><wbr><span><span>Play</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1801393104%2FFunctions%2F-542442701"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":bv-playback:dokkaHtmlPartial/stageRelease"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="cancel-pre-cache-and-play.html"><span class="token function">cancelPreCacheAndPlay</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Cancel pre-cache and play media source</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="737341180%2FFunctions%2F-542442701" anchor-label="enableRepeatMode" id="737341180%2FFunctions%2F-542442701" data-filterable-set=":bv-playback:dokkaHtmlPartial/stageRelease"></a>
+          <div class="table-row" data-filterable-current=":bv-playback:dokkaHtmlPartial/stageRelease" data-filterable-set=":bv-playback:dokkaHtmlPartial/stageRelease">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="enable-repeat-mode.html"><span>enable</span><wbr><span>Repeat</span><wbr><span><span>Mode</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="737341180%2FFunctions%2F-542442701"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":bv-playback:dokkaHtmlPartial/stageRelease"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="enable-repeat-mode.html"><span class="token function">enableRepeatMode</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">enabled<span class="token operator">: </span><span data-unresolved-link="kotlin/Boolean///PointingToDeclaration/">Boolean</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">loop the current video infinitely</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="149492761%2FFunctions%2F-542442701" anchor-label="getAudioTrackList" id="149492761%2FFunctions%2F-542442701" data-filterable-set=":bv-playback:dokkaHtmlPartial/stageRelease"></a>
+          <div class="table-row" data-filterable-current=":bv-playback:dokkaHtmlPartial/stageRelease" data-filterable-set=":bv-playback:dokkaHtmlPartial/stageRelease">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-audio-track-list.html"><span>get</span><wbr><span>Audio</span><wbr><span>Track</span><wbr><span><span>List</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="149492761%2FFunctions%2F-542442701"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":bv-playback:dokkaHtmlPartial/stageRelease"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-audio-track-list.html"><span class="token function">getAudioTrackList</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="kotlin.collections/MutableList///PointingToDeclaration/">MutableList</span><span class="token operator">&lt;</span><span class="token keyword"></span><span data-unresolved-link="kotlin/String///PointingToDeclaration/">String</span><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Get audio track list</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1296151588%2FFunctions%2F-542442701" anchor-label="getBufferedPosition" id="1296151588%2FFunctions%2F-542442701" data-filterable-set=":bv-playback:dokkaHtmlPartial/stageRelease"></a>
+          <div class="table-row" data-filterable-current=":bv-playback:dokkaHtmlPartial/stageRelease" data-filterable-set=":bv-playback:dokkaHtmlPartial/stageRelease">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-buffered-position.html"><span>get</span><wbr><span>Buffered</span><wbr><span><span>Position</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1296151588%2FFunctions%2F-542442701"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":bv-playback:dokkaHtmlPartial/stageRelease"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-buffered-position.html"><span class="token function">getBufferedPosition</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="kotlin/Long///PointingToDeclaration/">Long</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="571477012%2FFunctions%2F-542442701" anchor-label="getCurrentDashManifest" id="571477012%2FFunctions%2F-542442701" data-filterable-set=":bv-playback:dokkaHtmlPartial/stageRelease"></a>
+          <div class="table-row" data-filterable-current=":bv-playback:dokkaHtmlPartial/stageRelease" data-filterable-set=":bv-playback:dokkaHtmlPartial/stageRelease">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-current-dash-manifest.html"><span>get</span><wbr><span>Current</span><wbr><span>Dash</span><wbr><span><span>Manifest</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="571477012%2FFunctions%2F-542442701"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":bv-playback:dokkaHtmlPartial/stageRelease"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-current-dash-manifest.html"><span class="token function">getCurrentDashManifest</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="com.google.android.exoplayer.source.dash.manifest/DashManifest///PointingToDeclaration/">DashManifest</span><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="814109462%2FFunctions%2F-542442701" anchor-label="getCurrentLiveOffset" id="814109462%2FFunctions%2F-542442701" data-filterable-set=":bv-playback:dokkaHtmlPartial/stageRelease"></a>
+          <div class="table-row" data-filterable-current=":bv-playback:dokkaHtmlPartial/stageRelease" data-filterable-set=":bv-playback:dokkaHtmlPartial/stageRelease">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-current-live-offset.html"><span>get</span><wbr><span>Current</span><wbr><span>Live</span><wbr><span><span>Offset</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="814109462%2FFunctions%2F-542442701"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":bv-playback:dokkaHtmlPartial/stageRelease"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-current-live-offset.html"><span class="token function">getCurrentLiveOffset</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="kotlin/Long///PointingToDeclaration/">Long</span></div><div class="brief "><p class="paragraph">Get currentLiveOffset</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1705546118%2FFunctions%2F-542442701" anchor-label="getCurrentTrackGroups" id="1705546118%2FFunctions%2F-542442701" data-filterable-set=":bv-playback:dokkaHtmlPartial/stageRelease"></a>
+          <div class="table-row" data-filterable-current=":bv-playback:dokkaHtmlPartial/stageRelease" data-filterable-set=":bv-playback:dokkaHtmlPartial/stageRelease">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-current-track-groups.html"><span>get</span><wbr><span>Current</span><wbr><span>Track</span><wbr><span><span>Groups</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1705546118%2FFunctions%2F-542442701"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":bv-playback:dokkaHtmlPartial/stageRelease"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-current-track-groups.html"><span class="token function">getCurrentTrackGroups</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="com.google.android.exoplayer.source/TrackGroupArray///PointingToDeclaration/">TrackGroupArray</span><span class="token operator">?</span></div><div class="brief "><p class="paragraph">Get the audioTrack list</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="160633061%2FFunctions%2F-542442701" anchor-label="getCurrentWindow" id="160633061%2FFunctions%2F-542442701" data-filterable-set=":bv-playback:dokkaHtmlPartial/stageRelease"></a>
+          <div class="table-row" data-filterable-current=":bv-playback:dokkaHtmlPartial/stageRelease" data-filterable-set=":bv-playback:dokkaHtmlPartial/stageRelease">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-current-window.html"><span>get</span><wbr><span>Current</span><wbr><span><span>Window</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="160633061%2FFunctions%2F-542442701"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":bv-playback:dokkaHtmlPartial/stageRelease"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-current-window.html"><span class="token function">getCurrentWindow</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="com.google.android.exoplayer/Timeline.Window///PointingToDeclaration/">Timeline.Window</span><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1658816968%2FFunctions%2F-542442701" anchor-label="getDuration" id="-1658816968%2FFunctions%2F-542442701" data-filterable-set=":bv-playback:dokkaHtmlPartial/stageRelease"></a>
+          <div class="table-row" data-filterable-current=":bv-playback:dokkaHtmlPartial/stageRelease" data-filterable-set=":bv-playback:dokkaHtmlPartial/stageRelease">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-duration.html"><span>get</span><wbr><span><span>Duration</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1658816968%2FFunctions%2F-542442701"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":bv-playback:dokkaHtmlPartial/stageRelease"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-duration.html"><span class="token function">getDuration</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="kotlin/Long///PointingToDeclaration/">Long</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="733882764%2FFunctions%2F-542442701" anchor-label="getIsCurrentWindowDynamic" id="733882764%2FFunctions%2F-542442701" data-filterable-set=":bv-playback:dokkaHtmlPartial/stageRelease"></a>
+          <div class="table-row" data-filterable-current=":bv-playback:dokkaHtmlPartial/stageRelease" data-filterable-set=":bv-playback:dokkaHtmlPartial/stageRelease">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-is-current-window-dynamic.html"><span>get</span><wbr><span>Is</span><wbr><span>Current</span><wbr><span>Window</span><wbr><span><span>Dynamic</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="733882764%2FFunctions%2F-542442701"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":bv-playback:dokkaHtmlPartial/stageRelease"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-is-current-window-dynamic.html"><span class="token function">getIsCurrentWindowDynamic</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="kotlin/Boolean///PointingToDeclaration/">Boolean</span></div><div class="brief "><p class="paragraph">Get isCurrentWindowDynamic</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-120430109%2FFunctions%2F-542442701" anchor-label="getIsCurrentWindowLive" id="-120430109%2FFunctions%2F-542442701" data-filterable-set=":bv-playback:dokkaHtmlPartial/stageRelease"></a>
+          <div class="table-row" data-filterable-current=":bv-playback:dokkaHtmlPartial/stageRelease" data-filterable-set=":bv-playback:dokkaHtmlPartial/stageRelease">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-is-current-window-live.html"><span>get</span><wbr><span>Is</span><wbr><span>Current</span><wbr><span>Window</span><wbr><span><span>Live</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-120430109%2FFunctions%2F-542442701"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":bv-playback:dokkaHtmlPartial/stageRelease"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-is-current-window-live.html"><span class="token function">getIsCurrentWindowLive</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="kotlin/Boolean///PointingToDeclaration/">Boolean</span></div><div class="brief "><p class="paragraph">Get isCurrentWindowLive</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1473802830%2FFunctions%2F-542442701" anchor-label="getMaxVideoHeight" id="1473802830%2FFunctions%2F-542442701" data-filterable-set=":bv-playback:dokkaHtmlPartial/stageRelease"></a>
+          <div class="table-row" data-filterable-current=":bv-playback:dokkaHtmlPartial/stageRelease" data-filterable-set=":bv-playback:dokkaHtmlPartial/stageRelease">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-max-video-height.html"><span>get</span><wbr><span>Max</span><wbr><span>Video</span><wbr><span><span>Height</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1473802830%2FFunctions%2F-542442701"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":bv-playback:dokkaHtmlPartial/stageRelease"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-max-video-height.html"><span class="token function">getMaxVideoHeight</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="kotlin/Int///PointingToDeclaration/">Int</span></div><div class="brief "><p class="paragraph">Get the current maximal video height.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="771875147%2FFunctions%2F-542442701" anchor-label="getPlayer" id="771875147%2FFunctions%2F-542442701" data-filterable-set=":bv-playback:dokkaHtmlPartial/stageRelease"></a>
+          <div class="table-row" data-filterable-current=":bv-playback:dokkaHtmlPartial/stageRelease" data-filterable-set=":bv-playback:dokkaHtmlPartial/stageRelease">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-player.html"><span>get</span><wbr><span><span>Player</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="771875147%2FFunctions%2F-542442701"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":bv-playback:dokkaHtmlPartial/stageRelease"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-player.html"><span class="token function">getPlayer</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="com.blendvision.ottfs.player/BVPlayer///PointingToDeclaration/">BVPlayer</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1934095458%2FFunctions%2F-542442701" anchor-label="getPlayerState" id="-1934095458%2FFunctions%2F-542442701" data-filterable-set=":bv-playback:dokkaHtmlPartial/stageRelease"></a>
+          <div class="table-row" data-filterable-current=":bv-playback:dokkaHtmlPartial/stageRelease" data-filterable-set=":bv-playback:dokkaHtmlPartial/stageRelease">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-player-state.html"><span>get</span><wbr><span>Player</span><wbr><span><span>State</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1934095458%2FFunctions%2F-542442701"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":bv-playback:dokkaHtmlPartial/stageRelease"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-player-state.html"><span class="token function">getPlayerState</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.blendvision.player.playback.presentation.model/-player-state/index.html">PlayerState</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1818881091%2FFunctions%2F-542442701" anchor-label="getPosition" id="1818881091%2FFunctions%2F-542442701" data-filterable-set=":bv-playback:dokkaHtmlPartial/stageRelease"></a>
+          <div class="table-row" data-filterable-current=":bv-playback:dokkaHtmlPartial/stageRelease" data-filterable-set=":bv-playback:dokkaHtmlPartial/stageRelease">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-position.html"><span>get</span><wbr><span><span>Position</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1818881091%2FFunctions%2F-542442701"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":bv-playback:dokkaHtmlPartial/stageRelease"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-position.html"><span class="token function">getPosition</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="kotlin/Long///PointingToDeclaration/">Long</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="601461036%2FFunctions%2F-542442701" anchor-label="getPositionWithoutWindowStartTime" id="601461036%2FFunctions%2F-542442701" data-filterable-set=":bv-playback:dokkaHtmlPartial/stageRelease"></a>
+          <div class="table-row" data-filterable-current=":bv-playback:dokkaHtmlPartial/stageRelease" data-filterable-set=":bv-playback:dokkaHtmlPartial/stageRelease">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-position-without-window-start-time.html"><span>get</span><wbr><span>Position</span><wbr><span>Without</span><wbr><span>Window</span><wbr><span>Start</span><wbr><span><span>Time</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="601461036%2FFunctions%2F-542442701"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":bv-playback:dokkaHtmlPartial/stageRelease"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-position-without-window-start-time.html"><span class="token function">getPositionWithoutWindowStartTime</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="kotlin/Long///PointingToDeclaration/">Long</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-967813310%2FFunctions%2F-542442701" anchor-label="getQualityTrackList" id="-967813310%2FFunctions%2F-542442701" data-filterable-set=":bv-playback:dokkaHtmlPartial/stageRelease"></a>
+          <div class="table-row" data-filterable-current=":bv-playback:dokkaHtmlPartial/stageRelease" data-filterable-set=":bv-playback:dokkaHtmlPartial/stageRelease">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-quality-track-list.html"><span>get</span><wbr><span>Quality</span><wbr><span>Track</span><wbr><span><span>List</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-967813310%2FFunctions%2F-542442701"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":bv-playback:dokkaHtmlPartial/stageRelease"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-quality-track-list.html"><span class="token function">getQualityTrackList</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="kotlin.collections/List///PointingToDeclaration/">List</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../com.blendvision.player.playback.presentation.model/-quality/index.html">Quality</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1029851357%2FFunctions%2F-542442701" anchor-label="getSubtitleTrackList" id="1029851357%2FFunctions%2F-542442701" data-filterable-set=":bv-playback:dokkaHtmlPartial/stageRelease"></a>
+          <div class="table-row" data-filterable-current=":bv-playback:dokkaHtmlPartial/stageRelease" data-filterable-set=":bv-playback:dokkaHtmlPartial/stageRelease">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-subtitle-track-list.html"><span>get</span><wbr><span>Subtitle</span><wbr><span>Track</span><wbr><span><span>List</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1029851357%2FFunctions%2F-542442701"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":bv-playback:dokkaHtmlPartial/stageRelease"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-subtitle-track-list.html"><span class="token function">getSubtitleTrackList</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="kotlin.collections/MutableList///PointingToDeclaration/">MutableList</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../com.blendvision.player.playback.presentation.model/-track-info/-subtitle/index.html">TrackInfo.Subtitle</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Get subtitle track list</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-381035657%2FFunctions%2F-542442701" anchor-label="getTotalBufferedDuration" id="-381035657%2FFunctions%2F-542442701" data-filterable-set=":bv-playback:dokkaHtmlPartial/stageRelease"></a>
+          <div class="table-row" data-filterable-current=":bv-playback:dokkaHtmlPartial/stageRelease" data-filterable-set=":bv-playback:dokkaHtmlPartial/stageRelease">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-total-buffered-duration.html"><span>get</span><wbr><span>Total</span><wbr><span>Buffered</span><wbr><span><span>Duration</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-381035657%2FFunctions%2F-542442701"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":bv-playback:dokkaHtmlPartial/stageRelease"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-total-buffered-duration.html"><span class="token function">getTotalBufferedDuration</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="kotlin/Long///PointingToDeclaration/">Long</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1577591405%2FFunctions%2F-542442701" anchor-label="initializePlayer" id="-1577591405%2FFunctions%2F-542442701" data-filterable-set=":bv-playback:dokkaHtmlPartial/stageRelease"></a>
+          <div class="table-row" data-filterable-current=":bv-playback:dokkaHtmlPartial/stageRelease" data-filterable-set=":bv-playback:dokkaHtmlPartial/stageRelease">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="initialize-player.html"><span>initialize</span><wbr><span><span>Player</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1577591405%2FFunctions%2F-542442701"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":bv-playback:dokkaHtmlPartial/stageRelease"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="initialize-player.html"><span class="token function">initializePlayer</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">context<span class="token operator">: </span><span data-unresolved-link="android.content/Context///PointingToDeclaration/">Context</span><span class="token punctuation">, </span></span><span class="parameter ">lastPlayed<span class="token operator">: </span><span data-unresolved-link="kotlin/Long///PointingToDeclaration/">Long</span><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">playWhenReady<span class="token operator">: </span><span data-unresolved-link="kotlin/Boolean///PointingToDeclaration/">Boolean</span><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">bvPlayerParameters<span class="token operator">: </span><span data-unresolved-link="com.blendvision.ottfs.player/BVPlayerParameters///PointingToDeclaration/">BVPlayerParameters</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">New a ExoPlayer instance and load video. Please call releasePlayer() when player is never used.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1705463712%2FFunctions%2F-542442701" anchor-label="isPaused" id="1705463712%2FFunctions%2F-542442701" data-filterable-set=":bv-playback:dokkaHtmlPartial/stageRelease"></a>
+          <div class="table-row" data-filterable-current=":bv-playback:dokkaHtmlPartial/stageRelease" data-filterable-set=":bv-playback:dokkaHtmlPartial/stageRelease">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-paused.html"><span>is</span><wbr><span><span>Paused</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1705463712%2FFunctions%2F-542442701"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":bv-playback:dokkaHtmlPartial/stageRelease"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="is-paused.html"><span class="token function">isPaused</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="kotlin/Boolean///PointingToDeclaration/">Boolean</span></div><div class="brief "><p class="paragraph">Whether the player is paused.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1190747548%2FFunctions%2F-542442701" anchor-label="isPlaybackEndedWhenReady" id="-1190747548%2FFunctions%2F-542442701" data-filterable-set=":bv-playback:dokkaHtmlPartial/stageRelease"></a>
+          <div class="table-row" data-filterable-current=":bv-playback:dokkaHtmlPartial/stageRelease" data-filterable-set=":bv-playback:dokkaHtmlPartial/stageRelease">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-playback-ended-when-ready.html"><span>is</span><wbr><span>Playback</span><wbr><span>Ended</span><wbr><span>When</span><wbr><span><span>Ready</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1190747548%2FFunctions%2F-542442701"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":bv-playback:dokkaHtmlPartial/stageRelease"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="is-playback-ended-when-ready.html"><span class="token function">isPlaybackEndedWhenReady</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="kotlin/Boolean///PointingToDeclaration/">Boolean</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1732196382%2FFunctions%2F-542442701" anchor-label="isPlaying" id="1732196382%2FFunctions%2F-542442701" data-filterable-set=":bv-playback:dokkaHtmlPartial/stageRelease"></a>
+          <div class="table-row" data-filterable-current=":bv-playback:dokkaHtmlPartial/stageRelease" data-filterable-set=":bv-playback:dokkaHtmlPartial/stageRelease">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-playing.html"><span>is</span><wbr><span><span>Playing</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1732196382%2FFunctions%2F-542442701"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":bv-playback:dokkaHtmlPartial/stageRelease"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="is-playing.html"><span class="token function">isPlaying</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="kotlin/Boolean///PointingToDeclaration/">Boolean</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1461003565%2FFunctions%2F-542442701" anchor-label="isStalled" id="1461003565%2FFunctions%2F-542442701" data-filterable-set=":bv-playback:dokkaHtmlPartial/stageRelease"></a>
+          <div class="table-row" data-filterable-current=":bv-playback:dokkaHtmlPartial/stageRelease" data-filterable-set=":bv-playback:dokkaHtmlPartial/stageRelease">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-stalled.html"><span>is</span><wbr><span><span>Stalled</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1461003565%2FFunctions%2F-542442701"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":bv-playback:dokkaHtmlPartial/stageRelease"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="is-stalled.html"><span class="token function">isStalled</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="kotlin/Boolean///PointingToDeclaration/">Boolean</span></div><div class="brief "><p class="paragraph">Whether the player is currently stalled due to low buffer conditions.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-980806516%2FFunctions%2F-542442701" anchor-label="pause" id="-980806516%2FFunctions%2F-542442701" data-filterable-set=":bv-playback:dokkaHtmlPartial/stageRelease"></a>
+          <div class="table-row" data-filterable-current=":bv-playback:dokkaHtmlPartial/stageRelease" data-filterable-set=":bv-playback:dokkaHtmlPartial/stageRelease">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="pause.html"><span><span>pause</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-980806516%2FFunctions%2F-542442701"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":bv-playback:dokkaHtmlPartial/stageRelease"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="pause.html"><span class="token function">pause</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Pause the video.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-580128668%2FFunctions%2F-542442701" anchor-label="play" id="-580128668%2FFunctions%2F-542442701" data-filterable-set=":bv-playback:dokkaHtmlPartial/stageRelease"></a>
+          <div class="table-row" data-filterable-current=":bv-playback:dokkaHtmlPartial/stageRelease" data-filterable-set=":bv-playback:dokkaHtmlPartial/stageRelease">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="play.html"><span><span>play</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-580128668%2FFunctions%2F-542442701"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":bv-playback:dokkaHtmlPartial/stageRelease"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="play.html"><span class="token function">play</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Play the video.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-65275981%2FFunctions%2F-542442701" anchor-label="preCache" id="-65275981%2FFunctions%2F-542442701" data-filterable-set=":bv-playback:dokkaHtmlPartial/stageRelease"></a>
+          <div class="table-row" data-filterable-current=":bv-playback:dokkaHtmlPartial/stageRelease" data-filterable-set=":bv-playback:dokkaHtmlPartial/stageRelease">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="pre-cache.html"><span>pre</span><wbr><span><span>Cache</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-65275981%2FFunctions%2F-542442701"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":bv-playback:dokkaHtmlPartial/stageRelease"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="pre-cache.html"><span class="token function">preCache</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">context<span class="token operator">: </span><span data-unresolved-link="android.content/Context///PointingToDeclaration/">Context</span><span class="token punctuation">, </span></span><span class="parameter ">url<span class="token operator">: </span><span data-unresolved-link="kotlin/String///PointingToDeclaration/">String</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">pre-cache media source</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1238120349%2FFunctions%2F-542442701" anchor-label="prepareSource" id="1238120349%2FFunctions%2F-542442701" data-filterable-set=":bv-playback:dokkaHtmlPartial/stageRelease"></a>
+          <div class="table-row" data-filterable-current=":bv-playback:dokkaHtmlPartial/stageRelease" data-filterable-set=":bv-playback:dokkaHtmlPartial/stageRelease">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="prepare-source.html"><span>prepare</span><wbr><span><span>Source</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1238120349%2FFunctions%2F-542442701"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":bv-playback:dokkaHtmlPartial/stageRelease"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="prepare-source.html"><span class="token function">prepareSource</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">context<span class="token operator">: </span><span data-unresolved-link="android.content/Context///PointingToDeclaration/">Context</span><span class="token punctuation">, </span></span><span class="parameter ">bvPlayerSource<span class="token operator">: </span><span data-unresolved-link="com.blendvision.ottfs.player.data/BVPlayerSource///PointingToDeclaration/">BVPlayerSource</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">prepare media source</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="746596346%2FFunctions%2F-542442701" anchor-label="releasePlayer" id="746596346%2FFunctions%2F-542442701" data-filterable-set=":bv-playback:dokkaHtmlPartial/stageRelease"></a>
+          <div class="table-row" data-filterable-current=":bv-playback:dokkaHtmlPartial/stageRelease" data-filterable-set=":bv-playback:dokkaHtmlPartial/stageRelease">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="release-player.html"><span>release</span><wbr><span><span>Player</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="746596346%2FFunctions%2F-542442701"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":bv-playback:dokkaHtmlPartial/stageRelease"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="release-player.html"><span class="token function">releasePlayer</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Release the resource of player.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1841565334%2FFunctions%2F-542442701" anchor-label="resetState" id="1841565334%2FFunctions%2F-542442701" data-filterable-set=":bv-playback:dokkaHtmlPartial/stageRelease"></a>
+          <div class="table-row" data-filterable-current=":bv-playback:dokkaHtmlPartial/stageRelease" data-filterable-set=":bv-playback:dokkaHtmlPartial/stageRelease">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="reset-state.html"><span>reset</span><wbr><span><span>State</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1841565334%2FFunctions%2F-542442701"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":bv-playback:dokkaHtmlPartial/stageRelease"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="reset-state.html"><span class="token function">resetState</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Reset the state, ex: reset <a href="play-when-ready.html">playWhenReady</a> to initial value</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="970290036%2FFunctions%2F-542442701" anchor-label="seekTo" id="970290036%2FFunctions%2F-542442701" data-filterable-set=":bv-playback:dokkaHtmlPartial/stageRelease"></a>
+          <div class="table-row" data-filterable-current=":bv-playback:dokkaHtmlPartial/stageRelease" data-filterable-set=":bv-playback:dokkaHtmlPartial/stageRelease">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="seek-to.html"><span>seek</span><wbr><span><span>To</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="970290036%2FFunctions%2F-542442701"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":bv-playback:dokkaHtmlPartial/stageRelease"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="seek-to.html"><span class="token function">seekTo</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">position<span class="token operator">: </span><span data-unresolved-link="kotlin/Long///PointingToDeclaration/">Long</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Seek the video to a specified position.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1989823659%2FFunctions%2F-542442701" anchor-label="seekToDefaultPosition" id="1989823659%2FFunctions%2F-542442701" data-filterable-set=":bv-playback:dokkaHtmlPartial/stageRelease"></a>
+          <div class="table-row" data-filterable-current=":bv-playback:dokkaHtmlPartial/stageRelease" data-filterable-set=":bv-playback:dokkaHtmlPartial/stageRelease">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="seek-to-default-position.html"><span>seek</span><wbr><span>To</span><wbr><span>Default</span><wbr><span><span>Position</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1989823659%2FFunctions%2F-542442701"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":bv-playback:dokkaHtmlPartial/stageRelease"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="seek-to-default-position.html"><span class="token function">seekToDefaultPosition</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Seek the video to the default position.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="64038953%2FFunctions%2F-542442701" anchor-label="setBVPlayerEventListener" id="64038953%2FFunctions%2F-542442701" data-filterable-set=":bv-playback:dokkaHtmlPartial/stageRelease"></a>
+          <div class="table-row" data-filterable-current=":bv-playback:dokkaHtmlPartial/stageRelease" data-filterable-set=":bv-playback:dokkaHtmlPartial/stageRelease">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-b-v-player-event-listener.html"><span>set</span><wbr><span>BVPlayer</span><wbr><span>Event</span><wbr><span><span>Listener</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="64038953%2FFunctions%2F-542442701"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":bv-playback:dokkaHtmlPartial/stageRelease"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="set-b-v-player-event-listener.html"><span class="token function">setBVPlayerEventListener</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">eventListener<span class="token operator">: </span><span data-unresolved-link="com.blendvision.ottfs.player.listener/BVPlayerEventListener///PointingToDeclaration/">BVPlayerEventListener</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Setup a BVPlayerEventListener.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2073190688%2FFunctions%2F-542442701" anchor-label="setMaxVideoHeight" id="-2073190688%2FFunctions%2F-542442701" data-filterable-set=":bv-playback:dokkaHtmlPartial/stageRelease"></a>
+          <div class="table-row" data-filterable-current=":bv-playback:dokkaHtmlPartial/stageRelease" data-filterable-set=":bv-playback:dokkaHtmlPartial/stageRelease">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-max-video-height.html"><span>set</span><wbr><span>Max</span><wbr><span>Video</span><wbr><span><span>Height</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2073190688%2FFunctions%2F-542442701"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":bv-playback:dokkaHtmlPartial/stageRelease"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="set-max-video-height.html"><span class="token function">setMaxVideoHeight</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">maxVideoHeight<span class="token operator">: </span><span data-unresolved-link="kotlin/Int///PointingToDeclaration/">Int</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Sets the maximum allowed video height in pixels. The default value is <span data-unresolved-link="kotlin/Int.Companion/MAX_VALUE/#/PointingToDeclaration/">Int.MAX_VALUE</span> (i.e. no constraint).</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="827481676%2FFunctions%2F-542442701" anchor-label="setMute" id="827481676%2FFunctions%2F-542442701" data-filterable-set=":bv-playback:dokkaHtmlPartial/stageRelease"></a>
+          <div class="table-row" data-filterable-current=":bv-playback:dokkaHtmlPartial/stageRelease" data-filterable-set=":bv-playback:dokkaHtmlPartial/stageRelease">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-mute.html"><span>set</span><wbr><span><span>Mute</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="827481676%2FFunctions%2F-542442701"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":bv-playback:dokkaHtmlPartial/stageRelease"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="set-mute.html"><span class="token function">setMute</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">isMute<span class="token operator">: </span><span data-unresolved-link="kotlin/Boolean///PointingToDeclaration/">Boolean</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Set audio mute or unmute</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1617524862%2FFunctions%2F-542442701" anchor-label="setVideoSurfaceView" id="-1617524862%2FFunctions%2F-542442701" data-filterable-set=":bv-playback:dokkaHtmlPartial/stageRelease"></a>
+          <div class="table-row" data-filterable-current=":bv-playback:dokkaHtmlPartial/stageRelease" data-filterable-set=":bv-playback:dokkaHtmlPartial/stageRelease">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-video-surface-view.html"><span>set</span><wbr><span>Video</span><wbr><span>Surface</span><wbr><span><span>View</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1617524862%2FFunctions%2F-542442701"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":bv-playback:dokkaHtmlPartial/stageRelease"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="set-video-surface-view.html"><span class="token function">setVideoSurfaceView</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">surfaceView<span class="token operator">: </span><span data-unresolved-link="android.view/SurfaceView///PointingToDeclaration/">SurfaceView</span><span class="token operator">?</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2096353253%2FFunctions%2F-542442701" anchor-label="stop" id="-2096353253%2FFunctions%2F-542442701" data-filterable-set=":bv-playback:dokkaHtmlPartial/stageRelease"></a>
+          <div class="table-row" data-filterable-current=":bv-playback:dokkaHtmlPartial/stageRelease" data-filterable-set=":bv-playback:dokkaHtmlPartial/stageRelease">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="stop.html"><span><span>stop</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2096353253%2FFunctions%2F-542442701"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":bv-playback:dokkaHtmlPartial/stageRelease"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="stop.html"><span class="token function">stop</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">reset<span class="token operator">: </span><span data-unresolved-link="kotlin/Boolean///PointingToDeclaration/">Boolean</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Stop the player</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2026 Copyright</span><span class="pull-right"><span>Generated by </span><a href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
