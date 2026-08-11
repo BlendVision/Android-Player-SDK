@@ -8,14 +8,34 @@ Our player provides convenient APIs for DRM, media controllers, and a generic UI
 
 - **IDE**: Android Studio 3.0 or later
 - **minSdkVersion**: 21
-- **targetSdkVersion**: 35
+- **targetSdkVersion**: 36
 - **Kotlin Version**: 2.1.20 or later
-- **Android Gradle Plugin**: 8.3.2 or lower
+- **Android Gradle Plugin**: 8.13.0 or later
 
 ## Integration
 
 ### In your settings.gradle file, `dependencyResolutionManagement` sections:
 [Gets username and password](https://github.com/BlendVision/Android-Player-SDK/wiki/Android%E2%80%90Player%E2%80%90SDK-pull-credentials)
+
+Kotlin DSL (`settings.gradle.kts`):
+```kotlin
+dependencyResolutionManagement {
+  repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+  repositories {
+    google()
+    mavenCentral()
+    maven {
+      url = uri("https://maven.pkg.github.com/blendvision/Android-Packages")
+      credentials {
+        username = //TODO
+        password = //TODO
+      }
+    }
+  }
+}
+```
+
+Groovy (`settings.gradle`):
 ```groovy
 dependencyResolutionManagement {
   repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
@@ -37,6 +57,17 @@ dependencyResolutionManagement {
 
 ### Add the dependencies for the Player SDK to your module's app-level Gradle file, normally app/build.gradle:
 
+Kotlin DSL (`app/build.gradle.kts`):
+```kotlin
+dependencies {
+    implementation("com.blendvision.player:playback:$latestVersion")
+    implementation("com.blendvision.player:download:$latestVersion")
+    implementation("com.blendvision.player:analytics:$latestVersion")
+    implementation("com.blendvision.player:common:$latestVersion")
+}
+```
+
+Groovy (`app/build.gradle`):
 ```groovy
 dependencies {
     implementation "com.blendvision.player:playback:$latest_version"
@@ -81,6 +112,3 @@ BlendVision Player license key is obtained by logging into BlendVision CMS (http
 >   2. If the license key is not correctly set, you will encounter a 20403 error.
 
 > For a full code example, please refer to the [Sample app demo](https://github.com/BlendVision/Android-Player-Samples)
-
-
-
