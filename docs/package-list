@@ -24,3 +24,5 @@ com.blendvision.player.playback.presentation.menu
 com.blendvision.player.playback.presentation.model
 com.blendvision.player.playback.presentation.model.setting
 com.blendvision.player.playback.presentation.utils
+module:bv-playback-service
+com.blendvision.player.playback.service.presentation
